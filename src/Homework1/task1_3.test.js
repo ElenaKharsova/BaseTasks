@@ -34,9 +34,11 @@ describe("Checking function counts user's number", () => {
   });
   it("The empty string insted of number", () => {
     jest.spyOn(window, "prompt").mockReturnValue("");
-    jest.spyOn(window, "alert").mockReturnValue("You didn't input the number!");
+    jest
+      .spyOn(window, "alert")
+      .mockReturnValue("You haven't input the number!");
     sumUserNumber();
     expect(window.prompt).toHaveLastReturnedWith("");
-    expect(window.alert).toHaveBeenCalledWith("You didn't input the number!");
+    expect(window.alert).toHaveBeenCalledWith("You haven't input the number!");
   });
 });

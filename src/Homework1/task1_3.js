@@ -1,7 +1,7 @@
 export function sumUserNumber() {
   const userNumber = prompt("Input triple number");
   if (!userNumber) {
-    alert("You didn't input the number!");
+    alert("You haven't input the number!");
   } else {
     const result = userNumber
       .split("")

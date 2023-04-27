@@ -1,20 +1,16 @@
+import { isNumber, isString } from "../library";
+
 export function sum(arg1, arg2) {
-  if (typeof arg1 !== "number" || typeof arg2 !== "number") {
-    return "There are not numbers";
-  }
+  isNumber(arg1, arg2);
   console.log(arg1 + arg2);
 }
 
 export function multiplication(arg1, arg2) {
-  if (typeof arg1 !== "number" || typeof arg2 !== "number") {
-    return "There are not numbers";
-  }
+  isNumber(arg1, arg2);
   console.log(arg1 * arg2);
 }
 
 export function countStringSymbols(string1, string2) {
-  if (typeof string1 !== "string" || typeof string2 !== "string") {
-    return "There are not strings";
-  }
+  isString(string1, string2);
   console.log(string1.length + string2.length);
 }
