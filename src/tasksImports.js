@@ -10,3 +10,4 @@ export * from "./Homework2/task2";
 export * from "./Homework2/task2_3";
 export * from "./Homework3/task3";
 export * from "./Homework3/task3_3";
+export * from "./Homework4/task4";

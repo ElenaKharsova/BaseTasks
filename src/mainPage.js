@@ -113,6 +113,37 @@ export function createMainPage(element) {
             <button id="objects">Solution</button>
             </div>
         </li>
+        <li>
+            <h2>Homework 5</h2>
+            <ul>
+                <li>
+            <div class="li">
+            <h3>Task 1</h3>
+            <div>Выведите в консоль сумму всех элементов массива</div>
+            <button id="">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 2</h3>
+            <div>Создайте новый массив на основе исходного, в 
+            котором каждый элемент будет вдвое больше 
+            элемента исходного массива с таким же индексом. 
+            (a[1] = 3, b[1] = 6, где a — исходный массив, b — новый
+            массив)</div>
+            <button id="">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 3</h3>
+            <div>*Найдите и выведите в консоль наибольший и 
+            наименьший элементы исходного массива</div>
+            <button id="">Solution</button>
+            </div>
+                </li>
+            </ul>    
+        </li>
     </ul>`;
 
   mainElement
@@ -148,5 +179,7 @@ export function createMainPage(element) {
     .querySelector("#arithmeticMean")
     .addEventListener("click", taskFunctions.arithmeticMean);
 
-  // mainElement.querySelector("#objects").addEventListener("click", taskFunctions.objects);
+  mainElement
+    .querySelector("#objects")
+    .addEventListener("click", taskFunctions.objects);
 }
