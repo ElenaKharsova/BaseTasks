@@ -10,3 +10,4 @@ export {
   createArrayDoubleElements,
   findArrayExtremums,
 } from "./Homework5/task5";
+export * from "./Homework6/task6";
