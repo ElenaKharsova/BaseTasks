@@ -89,7 +89,7 @@ describe("Testing function months presented", () => {
     monthsPresented();
     expect(window.prompt).toHaveLastReturnedWith("0");
     expect(consoleLogMock).toHaveBeenCalledWith(
-      "The number is not included in the boundaries",
+      "The number is not included in the boundaries"
     );
   });
 });
