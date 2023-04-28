@@ -154,7 +154,7 @@ export function createMainPage(element) {
             <div>Напишите функцию diff, которая получает в качестве 
             параметров 2 числа и возвращает разницу между 
             наибольшим и наименьшим</div>
-            <button id="">Solution</button>
+            <button id="diff" disabled>Solution</button>
             </div>
                 </li>
                 <li>
@@ -164,7 +164,7 @@ export function createMainPage(element) {
             вход текстовую строку. Функция возвращает true, если 
             строка состоит из одного слова и false, если из 
             нескольких</div>
-            <button id="">Solution</button>
+            <button id="isWord" disabled>Solution</button>
             </div>
                 </li>
                 <li>
@@ -172,7 +172,7 @@ export function createMainPage(element) {
             <h3>Task 3</h3>
             <div>*Напишите функцию pow(a, x), которая вернёт 
             значение числа a, возведённого в степень x.</div>
-            <button id="">Solution</button>
+            <button id="pow" disabled>Solution</button>
             </div>
                 </li>
             </ul>    
@@ -225,4 +225,14 @@ export function createMainPage(element) {
   mainElement
     .querySelector("#findArrayExtremums")
     .addEventListener("click", taskFunctions.findArrayExtremums);
+
+  mainElement
+    .querySelector("#diff")
+    .addEventListener("click", taskFunctions.diff);
+  mainElement
+    .querySelector("#isWord")
+    .addEventListener("click", taskFunctions.isWord);
+  mainElement
+    .querySelector("#pow")
+    .addEventListener("click", taskFunctions.pow);
 }
