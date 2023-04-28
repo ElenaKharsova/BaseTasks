@@ -119,8 +119,9 @@ export function createMainPage(element) {
                 <li>
             <div class="li">
             <h3>Task 1</h3>
-            <div>Выведите в консоль сумму всех элементов массива</div>
-            <button id="">Solution</button>
+            <div>Создайте массив целых чисел из 10 элементов.
+            Выведите в консоль сумму всех элементов массива</div>
+            <button id="sumArrayElements" disabled>Solution</button>
             </div>
                 </li>
                 <li>
@@ -131,7 +132,7 @@ export function createMainPage(element) {
             элемента исходного массива с таким же индексом. 
             (a[1] = 3, b[1] = 6, где a — исходный массив, b — новый
             массив)</div>
-            <button id="">Solution</button>
+            <button id="createArrayDoubleElements" disabled>Solution</button>
             </div>
                 </li>
                 <li>
@@ -139,6 +140,38 @@ export function createMainPage(element) {
             <h3>Task 3</h3>
             <div>*Найдите и выведите в консоль наибольший и 
             наименьший элементы исходного массива</div>
+            <button id="findArrayExtremums" disabled>Solution</button>
+            </div>
+                </li>
+            </ul>    
+        </li>
+        <li>
+            <h2>Homework 6</h2>
+            <ul>
+                <li>
+            <div class="li">
+            <h3>Task 1</h3>
+            <div>Напишите функцию diff, которая получает в качестве 
+            параметров 2 числа и возвращает разницу между 
+            наибольшим и наименьшим</div>
+            <button id="">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 2</h3>
+            <div>Напишите функцию isWord, которая принимает на 
+            вход текстовую строку. Функция возвращает true, если 
+            строка состоит из одного слова и false, если из 
+            нескольких</div>
+            <button id="">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 3</h3>
+            <div>*Напишите функцию pow(a, x), которая вернёт 
+            значение числа a, возведённого в степень x.</div>
             <button id="">Solution</button>
             </div>
                 </li>
@@ -182,4 +215,14 @@ export function createMainPage(element) {
   mainElement
     .querySelector("#objects")
     .addEventListener("click", taskFunctions.objects);
+
+  mainElement
+    .querySelector("#sumArrayElements")
+    .addEventListener("click", taskFunctions.sumArrayElements);
+  mainElement
+    .querySelector("#createArrayDoubleElements")
+    .addEventListener("click", taskFunctions.createArrayDoubleElements);
+  mainElement
+    .querySelector("#findArrayExtremums")
+    .addEventListener("click", taskFunctions.findArrayExtremums);
 }
