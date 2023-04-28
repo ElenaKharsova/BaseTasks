@@ -29,7 +29,7 @@ describe("Checking function counts user's number", () => {
     sumUserNumber();
     expect(window.prompt).toHaveLastReturnedWith("1b");
     expect(window.alert).toHaveBeenCalledWith(
-      "You have input incorrect symbols!",
+      "You have input incorrect symbols!"
     );
   });
   it("The empty string insted of number", () => {

@@ -1,7 +1,4 @@
-import { sum, multiplication, countStringSymbols } from "./Homework1/task1";
-import { sumUserNumber } from "./Homework1/task1_3";
-import { monthsPresented } from "./Homework2/task2_3";
-import { isCircleFitToSquare, maxNumber } from "./Homework2/task2";
+import * as taskFunctions from "./tasksImports";
 
 export function createMainPage(element) {
   const mainElement = element;
@@ -77,7 +74,7 @@ export function createMainPage(element) {
                 <li>
             <div class="li">
             <h3>Task 1</h3>
-            <div>1.Вывести в консоль сумму всех целых чисел от 50 до 
+            <div>Вывести в консоль сумму всех целых чисел от 50 до 
             100</div>
             <button id="sumNaturalNumbers">Solution</button>
             </div>
@@ -120,34 +117,36 @@ export function createMainPage(element) {
 
   mainElement
     .querySelector("#sumMultiplication")
-    .addEventListener("click", sum);
+    .addEventListener("click", taskFunctions.sum);
   mainElement
     .querySelector("#sumMultiplication")
-    .addEventListener("click", multiplication);
+    .addEventListener("click", taskFunctions.multiplication);
   mainElement
     .querySelector("#countStringSymbols")
-    .addEventListener("click", countStringSymbols);
+    .addEventListener("click", taskFunctions.countStringSymbols);
   mainElement
     .querySelector("#sumUserNumber")
-    .addEventListener("click", sumUserNumber);
+    .addEventListener("click", taskFunctions.sumUserNumber);
 
-  mainElement.querySelector("#maxNumber").addEventListener("click", maxNumber);
+  mainElement
+    .querySelector("#maxNumber")
+    .addEventListener("click", taskFunctions.maxNumber);
   mainElement
     .querySelector("#monthsPresented")
-    .addEventListener("click", monthsPresented);
+    .addEventListener("click", taskFunctions.monthsPresented);
   mainElement
     .querySelector("#isCircleFitToSquare")
-    .addEventListener("click", isCircleFitToSquare);
+    .addEventListener("click", taskFunctions.isCircleFitToSquare);
 
   mainElement
     .querySelector("#sumNaturalNumbers")
-    .addEventListener("click", sumNaturalNumbers);
+    .addEventListener("click", taskFunctions.sumNaturalNumbers);
   mainElement
     .querySelector("#multiplacationTable")
-    .addEventListener("click", multiplacationTable);
+    .addEventListener("click", taskFunctions.multiplacationTable);
   mainElement
     .querySelector("#arithmeticMean")
-    .addEventListener("click", arithmeticMean);
+    .addEventListener("click", taskFunctions.arithmeticMean);
 
-  mainElement.querySelector("#objects").addEventListener("click", objects);
+  // mainElement.querySelector("#objects").addEventListener("click", taskFunctions.objects);
 }
