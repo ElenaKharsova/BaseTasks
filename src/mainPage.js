@@ -177,6 +177,21 @@ export function createMainPage(element) {
                 </li>
             </ul>    
         </li>
+        <li>
+            <h2>Homework 7</h2>
+            <div class="li">
+            <div>Сверстать страницу и подключить к ней файл со 
+            скриптом. На странице должны быть три текстовых
+            параграфа, поле ввода и кнопка. Напишите скрипт, 
+            который будет выполнять следующие условия:<br/>
+            1.Кнопка скрыта, если в поле ввода нет значения.<br/>
+            2.При клике на кнопку добавляется новый параграф, 
+            содержащий текст из поля ввода.<br/>
+            3.*Если параграфов становится больше 5, первый из 
+            них удаляется</div>
+            <div id="task7"></div>
+            </div>                
+        </li>
     </ul>`;
 
   mainElement
@@ -235,4 +250,6 @@ export function createMainPage(element) {
   mainElement
     .querySelector("#pow")
     .addEventListener("click", taskFunctions.pow);
+
+  taskFunctions.createSection(mainElement.querySelector("#task7"));
 }
