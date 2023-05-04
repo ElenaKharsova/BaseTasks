@@ -12,6 +12,10 @@ li {
   list-style: none;
 }
 
+input {
+  margin: 0 20px 0 20px;
+}
+
 button {
   border-radius: 25% 10%;
   background-color: darkgrey;
@@ -54,4 +58,8 @@ div {
   border-color: rgb(233, 251, 245);
   border: solid;
   border-radius: 10px;
+}
+
+.hidden {
+  visibility: hidden;
 }
