@@ -37,5 +37,6 @@ export function createSection(element) {
     }
 
     input.value = "";
+    button.classList.add("hidden");
   }
 }
