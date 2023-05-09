@@ -192,6 +192,39 @@ export function createMainPage(element) {
             <div id="task7"></div>
             </div>                
         </li>
+        <li>
+            <h2>Homework 8</h2>
+            <ul>
+            <li>
+            <div class="li">
+            <h3>Task 1</h3>
+            <div>Запросите у пользователя дату в формате 
+            ДД.ММ.ГГГГ. Напишите программу, выводящую день 
+            недели по введённой дате</div>
+            <button id="userDate">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 2</h3>
+            <div>Написать программу, которая выводит в консоль 
+            количество минут, прошедшее с начала сегодняшнего 
+            дня</div>
+            <button id="countDayMinutes">Solution</button>
+            </div>
+                </li>
+                <li>
+            <div class="li">
+            <h3>Task 3</h3>
+            <div>*В двух переменных хранятся даты рождения двух
+            пользователей в формате ДД.ММ.ГГГГ. Написать 
+            программу, которая определяет более молодого 
+            пользователя</div>
+            <button id="youngestUser" disabled>Solution</button>
+            </div>
+                </li>
+            </ul>
+        </li>
     </ul>`;
 
   mainElement
@@ -250,6 +283,16 @@ export function createMainPage(element) {
   mainElement
     .querySelector("#pow")
     .addEventListener("click", taskFunctions.pow);
+
+  mainElement
+    .querySelector("#userDate")
+    .addEventListener("click", taskFunctions.userDate);
+  mainElement
+    .querySelector("#countDayMinutes")
+    .addEventListener("click", taskFunctions.countDayMinutes);
+  mainElement
+    .querySelector("#youngestUser")
+    .addEventListener("click", taskFunctions.youngestUser);
 
   taskFunctions.createSection(mainElement.querySelector("#task7"));
 }
