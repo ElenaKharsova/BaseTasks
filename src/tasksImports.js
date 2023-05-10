@@ -14,3 +14,4 @@ export * from "./Homework6/task6";
 export { createSection } from "./Homework7/task7";
 export * from "./Homework8/task8";
 export * from "./Homework9/task9";
+export * from "./Homework10/task10";
