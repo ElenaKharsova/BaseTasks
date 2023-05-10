@@ -193,37 +193,68 @@ export function createMainPage(element) {
             </div>                
         </li>
         <li>
-            <h2>Homework 8</h2>
-            <ul>
+          <h2>Homework 8</h2>
+          <ul>
             <li>
-            <div class="li">
-            <h3>Task 1</h3>
-            <div>Запросите у пользователя дату в формате 
-            ДД.ММ.ГГГГ. Напишите программу, выводящую день 
-            недели по введённой дате</div>
-            <button id="userDate">Solution</button>
-            </div>
-                </li>
-                <li>
-            <div class="li">
-            <h3>Task 2</h3>
-            <div>Написать программу, которая выводит в консоль 
-            количество минут, прошедшее с начала сегодняшнего 
-            дня</div>
-            <button id="countDayMinutes">Solution</button>
-            </div>
-                </li>
-                <li>
-            <div class="li">
-            <h3>Task 3</h3>
-            <div>*В двух переменных хранятся даты рождения двух
-            пользователей в формате ДД.ММ.ГГГГ. Написать 
-            программу, которая определяет более молодого 
-            пользователя</div>
-            <button id="youngestUser" disabled>Solution</button>
-            </div>
-                </li>
-            </ul>
+              <div class="li">
+              <h3>Task 1</h3>
+              <div>Запросите у пользователя дату в формате 
+              ДД.ММ.ГГГГ. Напишите программу, выводящую день 
+              недели по введённой дате</div>
+              <button id="userDate">Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 2</h3>
+              <div>Написать программу, которая выводит в консоль 
+              количество минут, прошедшее с начала сегодняшнего 
+              дня</div>
+              <button id="countDayMinutes">Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 3</h3>
+              <div>*В двух переменных хранятся даты рождения двух
+              пользователей в формате ДД.ММ.ГГГГ. Написать 
+              программу, которая определяет более молодого 
+              пользователя</div>
+              <button id="youngestUser" disabled>Solution</button>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>Homework 9</h2>
+          <ul>
+            <li>
+              <div class="li">
+              <h3>Task 1</h3>
+              <div>Даны длины трёх сторон треугольника. Определить, 
+              является ли треугольник прямоугольным</div>
+              <button id="isRightTriangle" disabled>Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 2</h3>
+              <div>Пользователь вводит число R. Написать программу, 
+              которая выведет в консоль длину окружности и 
+              площадь круга с радиусом R</div>
+              <button id="calculateCircleLengthSquare">Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 3</h3>
+              <div>*Пользователь вводит числа a, b и c. Написать 
+              программу, выводящую корни квадратного 
+              уравнения с коэффициентами a, b и c</div>
+              <button id="calculateRootsQuadraticEquation">Solution</button>
+              </div>
+            </li>
+          </ul>
         </li>
     </ul>`;
 
@@ -295,4 +326,14 @@ export function createMainPage(element) {
     .addEventListener("click", taskFunctions.youngestUser);
 
   taskFunctions.createSection(mainElement.querySelector("#task7"));
+
+  mainElement
+    .querySelector("#isRightTriangle")
+    .addEventListener("click", taskFunctions.isRightTriangle);
+  mainElement
+    .querySelector("#calculateCircleLengthSquare")
+    .addEventListener("click", taskFunctions.calculateCircleLengthSquare);
+  mainElement
+    .querySelector("#calculateRootsQuadraticEquation")
+    .addEventListener("click", taskFunctions.calculateRootsQuadraticEquation);
 }
