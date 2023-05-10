@@ -1,4 +1,5 @@
 <img src="https://img.shields.io/badge/JS-red"> <img src="https://img.shields.io/badge/HTML-blue"> <img src="https://img.shields.io/badge/CSS-blue">
+
 # Base Tasks from VideoCourse
 
 This is a poject for small js tasks.
