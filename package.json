@@ -1,5 +1,5 @@
 {
-  "name": "lesson21_slider",
+  "name": "lesson10_BaseTasks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElenaKharsova/Slider.git"
+    "url": "git+https://github.com/ElenaKharsova/BaseTasks.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ElenaKharsova/Slider/issues"
+    "url": "https://github.com/ElenaKharsova/BaseTasks/issues"
   },
-  "homepage": "https://github.com/ElenaKharsova/Slider#readme",
+  "homepage": "https://github.com/ElenaKharsova/BaseTasks#readme",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/plugin-transform-runtime": "^7.21.4",

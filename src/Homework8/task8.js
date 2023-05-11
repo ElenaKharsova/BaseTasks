@@ -33,7 +33,7 @@ export function userDate() {
     }
     console.log(`Today is ${fullDayOfWeek}`);
   } else {
-    alert("Incorrect type of a date");
+    alert("Incorrect type of the date");
   }
 }
 

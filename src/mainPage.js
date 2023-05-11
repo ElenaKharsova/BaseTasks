@@ -256,6 +256,41 @@ export function createMainPage(element) {
             </li>
           </ul>
         </li>
+        <li>
+          <h2>Homework 10</h2>
+          <ul>
+            <li>
+              <div class="li">
+              <h3>Task 1</h3>
+              <div>Пользователь вводит текстовую строку. Определить с 
+              помощью регулярного выражения, является ли 
+              введённая строка:<br/>
+              Датой.</div>
+              <button id="checkDate">Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 2</h3>
+              <div>Пользователь вводит текстовую строку. Определить с 
+              помощью регулярного выражения, является ли 
+              введённая строка:<br/>
+              Адресом электронной почты.</div>
+              <button id="checkEmail">Solution</button>
+              </div>
+            </li>
+            <li>
+              <div class="li">
+              <h3>Task 3</h3>
+              <div>Пользователь вводит текстовую строку. Определить с 
+              помощью регулярного выражения, является ли 
+              введённая строка:<br/>
+              *Номером телефона</div>
+              <button id="checkPhone">Solution</button>
+              </div>
+            </li>
+          </ul>
+        </li>
     </ul>`;
 
   mainElement
@@ -336,4 +371,14 @@ export function createMainPage(element) {
   mainElement
     .querySelector("#calculateRootsQuadraticEquation")
     .addEventListener("click", taskFunctions.calculateRootsQuadraticEquation);
+
+  mainElement
+    .querySelector("#checkDate")
+    .addEventListener("click", taskFunctions.checkDate);
+  mainElement
+    .querySelector("#checkEmail")
+    .addEventListener("click", taskFunctions.checkEmail);
+  mainElement
+    .querySelector("#checkPhone")
+    .addEventListener("click", taskFunctions.checkPhone);
 }

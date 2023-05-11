@@ -23,44 +23,22 @@ describe("Testing fuction userDate", () => {
   });
   it("08/05/2023 is incorrect date", () => {
     jest.spyOn(window, "prompt").mockReturnValue("08/05/2023");
-    jest.spyOn(window, "alert").mockReturnValue("Incorrect type of a date");
+    jest.spyOn(window, "alert").mockReturnValue("Incorrect type of the date");
     userDate();
-    expect(window.alert).toHaveLastReturnedWith("Incorrect type of a date");
+    expect(window.alert).toHaveLastReturnedWith("Incorrect type of the date");
   });
-  it("08.05.2023 is Monday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("08.05.2023");
+  it.each([
+    ["08.05.2023", "Monday"],
+    ["09.05.2023", "Tuesday"],
+    ["10.05.2023", "Wednesday"],
+    ["11.05.2023", "Thursday"],
+    ["12.05.2023", "Friday"],
+    ["13.05.2023", "Saturday"],
+    ["14.05.2023", "Sunday"],
+  ])("%i is %j", (date, expected) => {
+    jest.spyOn(window, "prompt").mockReturnValue(date);
     userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Monday");
-  });
-  it("09.05.2023 is Tuesday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("09.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Tuesday");
-  });
-  it("10.05.2023 is Wednesday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("10.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Wednesday");
-  });
-  it("11.05.2023 is Thursday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("11.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Thursday");
-  });
-  it("12.05.2023 is Friday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("12.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Friday");
-  });
-  it("13.05.2023 is Saturday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("13.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Saturday");
-  });
-  it("14.05.2023 is Sunday", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("14.05.2023");
-    userDate();
-    expect(consoleLogMock).toHaveBeenCalledWith("Today is Sunday");
+    expect(consoleLogMock).toHaveBeenCalledWith(`Today is ${expected}`);
   });
 });
 
